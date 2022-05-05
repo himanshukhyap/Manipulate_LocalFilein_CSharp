@@ -44,8 +44,8 @@ An abstract class can have both abstract and regular methods:
                 Console.WriteLine("The pig says: wee wee");
             }
         }
-        // Animal myObj = new Animal(); 
-        // Will generate an error (Cannot create an instance of the abstract class or interface 'Animal')
+                    // Animal myObj = new Animal(); 
+                    // Will generate an error (Cannot create an instance of the abstract class or interface 'Animal')
 
     }
 

@@ -9,14 +9,11 @@ namespace MainNameSpace
     {
         static void Main(string[] args)
         {
-            //Basic1 b = new Basic1();
-            ////Console.WriteLine(b.h);
-            ////b.concateName("Himanshu" , "Kumar", "Kashyap");
-            //b.arr();
-            //...........................................
+            var b1 = new Basic1();
+            b1.test1();
 
-            var F = new Files();
-            F.filee2();
+
+
 
 
         }

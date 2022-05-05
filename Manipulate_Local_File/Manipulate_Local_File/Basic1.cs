@@ -49,7 +49,18 @@ namespace MainNameSpace.Part1
                 Console.WriteLine("\n");
             }
         }
-    
+     public void test1()
+        {
+            float num1 = 0.0f;
+            double num2 = 0.0d;
+            decimal num3 = 0.0m;
+            num1 = 1/5.5f;
+            num2 = 1/5.5d;
+            num3 = 1/5.5m;
+            Console.WriteLine("float is {0}",num1);
+            Console.WriteLine("double is {0}",num2);
+            Console.WriteLine("decimal is {0}", num3);
+        }
          
         
 
