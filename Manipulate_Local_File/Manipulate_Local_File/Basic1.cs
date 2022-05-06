@@ -1,29 +1,18 @@
 ﻿using System;
-//using System means that we can use classes from the System 
-/*
-*
-int myNum = 5;               // Integer (whole number)
-double myDoubleNum = 5.99D;  // Floating point number
-char myLetter = 'D';         // Character
-bool myBool = true;          // Boolean
-string myText = "Hello";     // String
-
-*/
-
 /*              \n New Line
                 \t Tab	
                 \b Back space
 */
 
 
-//namespace is used to organize your code, and it is a container for classes and other namespaces.
+
 namespace MainNameSpace.Part1
 {
 
     //class is a container for data and methods
     public class Basic1
     {
-        public int h = 5;
+   
 
         public string concateName(string fname, string middlename)
         {
@@ -49,7 +38,7 @@ namespace MainNameSpace.Part1
                 Console.WriteLine("\n");
             }
         }
-     public void test1()
+     public void num()
         {
             float num1 = 0.0f;
             double num2 = 0.0d;
@@ -61,7 +50,36 @@ namespace MainNameSpace.Part1
             Console.WriteLine("double is {0}",num2);
             Console.WriteLine("decimal is {0}", num3);
         }
+        public void date()
+        {
+            var d = new DateTime();
+            Console.WriteLine(d);
+            Console.WriteLine(DateTime.Today);
+            Console.WriteLine(DateTime.Now);
+        }
          
+        public void test1()
+        {
+            Console.WriteLine("Enter Int. number");
+            var input = Console.ReadLine();
+            if (int.TryParse(input, out _) ==true)
+            {
+            Console.WriteLine("Your Enter No. is {0}",input);
+                Console.WriteLine($"Your Enter No. is {input}");
+            }
+            else
+                Console.WriteLine("Wrong Input");
+        }
+        public void test2()
+        {
+            Console.WriteLine("Hello 'Himanshu'");
+            // Console.WriteLine("Hello "Himanshu"");  //error
+            Console.WriteLine("Hello \"Himanshu\"");
+            //Console.WriteLine('Hello "Himanshu"');   //error
+            Console.WriteLine("D:\\Himanshu\\C Sharp\\Manipulate_LocalFilein_CSharp\\Manipulate_Local_File");
+            Console.WriteLine(@"D:\Himanshu\C Sharp\Manipulate_LocalFilein_CSharp\Manipulate_Local_File");
+
+        }
         
 
 
